@@ -1,0 +1,134 @@
+.class-form__overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  overflow-y: auto;
+  background-color: rgb(35 28 54 / 45%);
+}
+
+.class-form {
+  width: 100%;
+  max-width: 520px;
+  max-height: 90vh;
+  overflow-y: auto;
+  padding: 28px;
+  border-radius: 18px;
+  background-color: #fff;
+  box-shadow: 0 20px 60px rgb(35 28 54 / 20%);
+}
+
+.class-form__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.class-form__header h2 {
+  margin: 0 0 8px;
+  color: #29243d;
+  font-size: 22px;
+}
+
+.class-form__header p {
+  margin: 0;
+  color: #777187;
+  font-size: 14px;
+}
+
+.class-form__close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+  border: none;
+  border-radius: 8px;
+  background: transparent;
+  color: #777187;
+  cursor: pointer;
+}
+
+.class-form__close:hover {
+  background-color: #f4f0fb;
+}
+
+.class-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.class-form label {
+  margin-top: 8px;
+  color: #393348;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.class-form input,
+.class-form select {
+  width: 100%;
+  min-height: 44px;
+  padding: 10px 12px;
+  border: 1px solid #e3deed;
+  border-radius: 9px;
+  background-color: #fff;
+  color: #393348;
+  font: inherit;
+  box-sizing: border-box;
+}
+
+.class-form input:focus,
+.class-form select:focus {
+  outline: 2px solid #d5c9f5;
+  border-color: #7660b5;
+}
+
+.class-form__actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.class-form__cancel,
+.class-form__save {
+  padding: 11px 16px;
+  border: none;
+  border-radius: 9px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.class-form__cancel {
+  background-color: #f2eff8;
+  color: #594d70;
+}
+
+.class-form__save {
+  background-color: #7660b5;
+  color: #fff;
+}
+
+.class-form__save:hover {
+  background-color: #60499e;
+}
+
+@media (max-width: 480px) {
+  .class-form {
+    padding: 20px;
+  }
+
+  .class-form__actions {
+    flex-direction: column-reverse;
+  }
+
+  .class-form__actions button {
+    width: 100%;
+  }
+}

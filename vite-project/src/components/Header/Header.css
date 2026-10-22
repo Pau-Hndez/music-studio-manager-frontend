@@ -1,0 +1,30 @@
+.dashboard-header {
+  height: 76px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 40px;
+  border-bottom: 1px solid #eee7df;
+  background-color: #ffffff;
+}
+
+.dashboard-header__user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #202944;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.dashboard-header__avatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background-color: #c9a8dd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-weight: 700;
+}
